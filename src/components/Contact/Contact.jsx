@@ -1,6 +1,6 @@
 import styles from './Contact.module.css';
 
-const Contact = ({ contact }) => {
+const Contact = ({ contact, handleDelete }) => {
   return (
     <div className={styles.contactItem}>
       <ul className={styles.contactList}>
@@ -11,7 +11,12 @@ const Contact = ({ contact }) => {
           <span className={styles.label}>Phone:</span> {contact.number}
         </li>
       </ul>
-      <button className={styles.deleteButton}>Delete</button>
+      <button
+        className={styles.deleteButton}
+        onClick={() => handleDelete(contact.id)}
+      >
+        Delete
+      </button>
     </div>
   );
 };

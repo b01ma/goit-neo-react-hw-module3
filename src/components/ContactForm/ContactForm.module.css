@@ -3,9 +3,10 @@
   flex-direction: column;
   gap: 16px;
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f9f9f9;
+  border: 2px solid #00ff41;
+  border-radius: 4px;
+  background-color: #0a0e0a;
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
 }
 
 .formGroup {
@@ -17,38 +18,51 @@
 .label {
   font-weight: 600;
   font-size: 14px;
-  color: #333;
+  color: #00ff41;
+  text-shadow: 0 0 5px #00ff41;
 }
 
 .input {
   padding: 8px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #00ff41;
   border-radius: 4px;
   font-size: 14px;
-  transition: border-color 0.2s;
+  transition: all 0.2s;
+  background-color: #000000;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .input:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: #00ff41;
+  box-shadow: 0 0 10px #00ff41, inset 0 0 5px rgba(0, 255, 65, 0.2);
 }
 
 .error {
-  color: #dc3545;
+  color: #ff0000;
   font-size: 12px;
   margin-top: 4px;
+  text-shadow: 0 0 5px #ff0000;
 }
 
 .submitButton {
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
+  background-color: #001a00;
+  color: #00ff41;
+  border: 1px solid #00ff41;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s;
+  font-family: 'Courier New', Courier, monospace;
+  transition: all 0.2s;
+}
+
+.submitButton:hover {
+  background-color: #00ff41;
+  color: #000000;
+  box-shadow: 0 0 15px #00ff41;
 }
 
 .submitButton:hover {
